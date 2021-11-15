@@ -543,10 +543,6 @@ const pollockCoords = [
 
   pollockpolygon.setMap(map);
 
-  const beneduminfo = new google.maps.InfoWindow({
-    content: "Waynesburg's Dining Hall",
-  });
-
   const willisonCoords = [
   { lat: 39.897538998708136, lng: -80.18620531789718 },
   { lat: 39.897541056479255, lng: -80.18638502589995 },
@@ -918,12 +914,20 @@ const pollockCoords = [
 
 // INFO WINDOWS
 
+  const beneduminfo = new google.maps.InfoWindow({
+    content: "<h2>Benedum Dining Hall</h2><p>This is Waynesburg Universitys Dining Hall. Catered by Aladdin Dining Services, this Hall is open to students all week for breakfast, lunch and dinner.</p>"
+  });
+
   benedumMarker.addListener("click", () => {
     beneduminfo.open({
       anchor: benedumMarker,
       map,
       shouldFocus: false,
     });
+  });
+
+  const eberlyinfo = new google.maps.InfoWindow({
+    content: "<h2>Eberly Library</h2><p>Eberly library boasts three floors, with various study rooms and conference rooms, as well as a computer lab with printers. Students are encouraged to take advantage of the thousands of books, and hundreds of movies at their disposal.</p>"
   });
 
    eberlyMarker.addListener("click", () => {
@@ -934,5 +938,220 @@ const pollockCoords = [
     });
   });
 
+   const chapelinfo = new google.maps.InfoWindow({
+    content: "<h2>Roberts Chapel</h2><p>Waynesburg University offers a weekly Chapel service on Tuesday morning at 11 a.m. in Roberts Chapel. This chapel was built in May 2010 and is the newest addition on campus.</p>"
+  });
+
+   chapelMarker.addListener("click", () => {
+    chapelinfo.open({
+      anchor: chapelMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const GPACinfo = new google.maps.InfoWindow({
+    content: "<h2><p>Goodwin Performing Arts Center</h2>The Goodwin Performing Arts Center is the home of every and all Waynesburg productions including: Fall plays, Spring musicals, One Act plays directed by students, WU’s Line, a student-led improv group, among many others.</p>"
+  });
+
+   GPACMarker.addListener("click", () => {
+    GPACinfo.open({
+      anchor: GPACMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+   const thayerinfo = new google.maps.InfoWindow({
+    content: "<h2>Thayer Hall</h2><p>Thayer Hall is an underclassmen male dorm located next to the Unity Trail on the east side of campus. Thayer Hall has three floors and an adjacent parking lot.</p>"
+  });
+
+   thayerMarker.addListener("click", () => {
+    thayerinfo.open({
+      anchor: thayerMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+    const stewartinfo = new google.maps.InfoWindow({
+    content: "<h2>Stewart</h2><p>Newly renovated Stewart Hall is the academic building where STEM majors call home. This building is full of laboratories, computer science technology and busy nursing majors!</p>"
+  });
+
+   stewartMarker.addListener("click", () => {
+    stewartinfo.open({
+      anchor: stewartMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+    const southinfo = new google.maps.InfoWindow({
+    content: "<h2>South</h2><p>South Dormitory is one of four upperclassmen women dorms here on campus. With suite style rooms, bay windows, and their own parking lot it is a nice place to live!</p>"
+  });
+
+   southMarker.addListener("click", () => {
+    southinfo.open({
+      anchor: southMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+    const westinfo = new google.maps.InfoWindow({
+    content: "<h2>West</h2><p>West Dormitory is one of four upperclassmen women dorms here on campus. With suite style rooms, bay windows, and a view of the setting sun, it is a nice place to live!</p>"
+  });
+
+   westMarker.addListener("click", () => {
+    westinfo.open({
+      anchor: westMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const eastinfo = new google.maps.InfoWindow({
+    content: "<h2>East</h2><p>East Dormitory is one of four upperclassmen women dorms here on campus. With suite style rooms, bay windows, and a view of the rising sun, it is a nice place to live!</p>"
+  });
+
+   eastMarker.addListener("click", () => {
+    eastinfo.open({
+      anchor: eastMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const pollockinfo = new google.maps.InfoWindow({
+    content: "<h2>Pollock</h2><p>Pollock Dormitory is one of four upperclassmen women dorms here on campus. With suite style rooms, private study rooms on each floor, and their own parking lot it is a nice place to live!</p>"
+  });
+
+   pollockMarker.addListener("click", () => {
+    pollockinfo.open({
+      anchor: pollockMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+ const wilisoninfo = new google.maps.InfoWindow({
+    content: "<h2>Wilison</h2><p>Wilison Hall is the only upperclassmen mens dormitory here on campus. It has six floors of suite-style rooms, and a game room housing a pool table, ping-pong table, sofas, and a large flatscreen TV. Pretty cool!</p>"
+  });
+
+   wilisonMarker.addListener("click", () => {
+    wilisoninfo.open({
+      anchor: wilisonMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const fieldhouseinfo = new google.maps.InfoWindow({
+    content: "<h2>Marisa Fieldhouse</h2><p>The Rudy Marisa Fieldhouse was dedicated to longtime Waynesburg Men’s Basketball coach Rudy Marisa. This gym holds a few classrooms as well as a basketball and volleyball court, and underground weight rooms.</p>"
+  });
+
+   fieldhouseMarker.addListener("click", () => {
+    fieldhouseinfo.open({
+      anchor: fieldhouseMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const hannainfo = new google.maps.InfoWindow({
+    content: "<h2>Hannah Hall</h2><p>Hanna Hall was the original building back in the Waynesburg College days. Nowadays it is home to various concentrations of business majors, as well as a few computer labs.</p>"
+  });
+
+   hannaMarker.addListener("click", () => {
+    hannainfo.open({
+      anchor: hannaMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const CREDinfo = new google.maps.InfoWindow({
+    content: "<h2>CRED</h2><p>The Center for Research and Economic Development strives to stimulate economic development in the local community through scientific research, faculty and staff expertise, resources and partnerships. It also provides state-of-the-art smart classrooms for students on campus.</p>"
+  });
+
+   CREDMarker.addListener("click", () => {
+    CREDinfo.open({
+      anchor: CREDMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const nestinfo = new google.maps.InfoWindow({
+    content: "<h2>The Nest/Rudys Place</h2><p>The Nest, a previous on-campus house, is a newly renovated store and hangout for students. It has a bookstore on the first floor, with the remaining two floors housing TVs, arcade games, board games, foosball, ping-pong, and more!</p>"
+  });
+
+   nestMarker.addListener("click", () => {
+    nestinfo.open({
+      anchor: nestMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const cjinfo = new google.maps.InfoWindow({
+    content: "<h2>Criminal Justice House</h2><p>The CSI House is the home of all things Criminal Justice on-campus. Students can come here to learn about their criminal justice courses, or for their life skills course surrounding gun safety.</p>"
+  });
+
+   cjMarker.addListener("click", () => {
+    cjinfo.open({
+      anchor: cjMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const buhlinfo = new google.maps.InfoWindow({
+    content: "<h2>Buhl Hall</h2><p>Buhl Hall is an academic building for the humanities and social sciences including psychology, history, english, and communication courses among others. It holds WCYJ-FM, Waynesburg University’s radio station, as well as the WCTV-14 News Studio.</p>"
+  });
+
+   buhlMarker.addListener("click", () => {
+    buhlinfo.open({
+      anchor: buhlMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const stoverinfo = new google.maps.InfoWindow({
+    content: "<h2>Stover Student Center</h2><p>The Stover Student Center is a 24-hour facility open to students for eating, hanging out, and the occasional class. It holds The Beehive, an MTO-style dining option, as well as the campus Starbucks, mailrooms, and a newly added 24-hr printer!</p>"
+  });
+
+   stoverMarker.addListener("click", () => {
+    stoverinfo.open({
+      anchor: stoverMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const millerinfo = new google.maps.InfoWindow({
+    content: "<h2>Miller Hall</h2><p>Miller Hall, nestled next to Hanna Hall, is a hub for administration on-campus. It holds Waynesburg’s Admissions and Business offices. It also holds numerous education courses on campus.</p>"
+  });
+
+   millerMarker.addListener("click", () => {
+    millerinfo.open({
+      anchor: millerMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+  const wileyinfo = new google.maps.InfoWindow({
+    content: "<h2>John F. Wiley Stadium</h2><p>Wiley Stadium, located approximately a mile off-campus, is where Waynesburg Univeristy’s home soccer and football games are played. With a view of the train tracks, and ample parking, it is always a fun place to hangout!</p>"
+  });
+
+   wileyMarker.addListener("click", () => {
+    wileyinfo.open({
+      anchor: wileyMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
 }
 
