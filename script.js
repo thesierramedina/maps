@@ -2,7 +2,7 @@ let map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 39.89814120775425, lng: -80.18688734824924 },
+    center: { lat: 39.89960750662476, lng: -80.18543716055432},
     zoom: 17,
     styles:
 
@@ -21,7 +21,7 @@ function initMap() {
         "elementType": "all",
         "stylers": [
             {
-                "color": "#f2f2f2"
+                "color": "#bf6a0f"
             }
         ]
     },
@@ -30,7 +30,7 @@ function initMap() {
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#686868"
+                "color": "#bf6a0f"
             },
             {
                 "visibility": "on"
@@ -42,7 +42,7 @@ function initMap() {
         "elementType": "all",
         "stylers": [
             {
-                "color": "#f2f2f2"
+                "color": "#c3d6d0"
             }
         ]
     },
@@ -105,7 +105,7 @@ function initMap() {
                 "visibility": "on"
             },
             {
-                "color": "#b4b4b4"
+                "color": "#242626"
             }
         ]
     },
@@ -144,7 +144,7 @@ function initMap() {
                 "lightness": "-52"
             },
             {
-                "color": "#9094a0"
+                "color": "#bf6a0f"
             },
             {
                 "visibility": "simplified"
@@ -189,7 +189,7 @@ function initMap() {
                 "visibility": "on"
             },
             {
-                "color": "#b4b4b4"
+                "color": "#bf6a0f"
             },
             {
                 "weight": "5.40"
@@ -207,7 +207,7 @@ function initMap() {
                 "visibility": "simplified"
             },
             {
-                "color": "#231f1f"
+                "color": "#bf6a0f"
             }
         ]
     },
@@ -219,7 +219,7 @@ function initMap() {
                 "visibility": "simplified"
             },
             {
-                "color": "#595151"
+                "color": "#bf6a0f"
             }
         ]
     },
@@ -240,7 +240,7 @@ function initMap() {
                 "visibility": "off"
             },
             {
-                "color": "#d7d7d7"
+                "color": "#bf6a0f"
             }
         ]
     },
@@ -249,7 +249,7 @@ function initMap() {
         "elementType": "labels.text",
         "stylers": [
             {
-                "color": "#282626"
+                "color": "#bf6a0f"
             },
             {
                 "visibility": "simplified"
@@ -267,7 +267,7 @@ function initMap() {
                 "lightness": "-41"
             },
             {
-                "color": "#2a4592"
+                "color": "#bf6a0f"
             },
             {
                 "visibility": "simplified"
@@ -291,7 +291,7 @@ function initMap() {
         "elementType": "labels.icon",
         "stylers": [
             {
-                "visibility": "on"
+                "visibility": "off"
             }
         ]
     },
@@ -324,7 +324,7 @@ function initMap() {
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
             }
         ]
     },
@@ -333,7 +333,7 @@ function initMap() {
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
             },
             {
                 "color": "#eeed6a"
@@ -921,6 +921,14 @@ const pollockCoords = [
   benedumMarker.addListener("click", () => {
     beneduminfo.open({
       anchor: benedumMarker,
+      map,
+      shouldFocus: false,
+    });
+  });
+
+   eberlyMarker.addListener("click", () => {
+    eberlyinfo.open({
+      anchor: eberlyMarker,
       map,
       shouldFocus: false,
     });
